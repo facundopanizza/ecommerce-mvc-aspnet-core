@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/facundo/code/pluralsight/asp.core/ecommerce/ecommerce.csproj": {}
+    "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj": {}
   },
   "projects": {
-    "/home/facundo/code/pluralsight/asp.core/ecommerce/ecommerce.csproj": {
+    "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/facundo/code/pluralsight/asp.core/ecommerce/ecommerce.csproj",
+        "projectUniqueName": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj",
         "projectName": "ecommerce",
-        "projectPath": "/home/facundo/code/pluralsight/asp.core/ecommerce/ecommerce.csproj",
+        "projectPath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj",
         "packagesPath": "/home/facundo/.nuget/packages/",
-        "outputPath": "/home/facundo/code/pluralsight/asp.core/ecommerce/obj/",
+        "outputPath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/facundo/.nuget/NuGet/NuGet.Config"

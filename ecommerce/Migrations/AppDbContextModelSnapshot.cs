@@ -61,25 +61,25 @@ namespace ecommerce.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("ImageThumbnailUrl")
-                        .HasColumnType("text");
-
-                    b.Property<string>("ImageUrl")
+                    b.Property<string>("ImageName")
                         .HasColumnType("text");
 
                     b.Property<bool>("IsProductOfTheWeek")
                         .HasColumnType("boolean");
 
                     b.Property<string>("LongDescription")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric");
 
                     b.Property<string>("ShortDescription")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("ProductId");
@@ -93,8 +93,7 @@ namespace ecommerce.Migrations
                         {
                             ProductId = 1,
                             CategoryId = 1,
-                            ImageThumbnailUrl = "https://brain-images-ssl.cdn.dixons.com/4/4/10188244/u_10188244.jpg",
-                            ImageUrl = "https://brain-images-ssl.cdn.dixons.com/4/4/10188244/u_10188244.jpg",
+                            ImageName = "1.jpg",
                             IsProductOfTheWeek = true,
                             LongDescription = "Specifications Mfr Part Number: BX80684I99900K Model: Intel Core i9-9900K Processor Core Name: Coffee Lake Core Count: 8 Thread Count: 16 Clock Speed: 3. 6 GHz Max Turbo Frequency: 5. 0 GHz Smart Cache: 16 MB DMI3: 8. 0 GT/s Lithography: 14nm Socket: LGA 1151 Max Thermal Design Power: 95W Memory Type: DDR4-2666 Processor Graphics: Intel UHD Graphics 630 Graphics Base Frequency: 350 MHz Graphics Max Dynamic Frequency: 1. 20 GHz Max CPU Configuration: 1 Advanced Technologies: Intel Optane Memory Supported Intel Turbo Boost 2. 0 Technology Intel vPro Platform Eligibility Intel Hyper-Threading Technology Intel Virtualization Technology (VT-x) Intel Virtualization Technology for Directed I/O (VT-d) Intel TSX-NI Intel 64 Instruction Set 64-bit Instruction Set Extensions - Intel SSE4. 1, Intel SSE4. 2, Intel AVX2 Idle States Enhanced Intel Speed Step Technology Thermal Monitoring Technologies Intel Identity Protection Technology Intel Stable Image Platform Program (SIPP) Intel AES New Instructions Secure Key Intel Software Guard Extensions (Intel SGX) Intel Memory Protection Extensions (Intel MPX) Intel OS Guard Intel Trusted Execution Technology Execute Disable Bit Intel Boot Guard.",
                             Name = "Intel i9 9900K",
@@ -105,8 +104,7 @@ namespace ecommerce.Migrations
                         {
                             ProductId = 2,
                             CategoryId = 1,
-                            ImageThumbnailUrl = "https://images-na.ssl-images-amazon.com/images/I/71S31CWSs3L._AC_SL1093_.jpg",
-                            ImageUrl = "https://images-na.ssl-images-amazon.com/images/I/71S31CWSs3L._AC_SL1093_.jpg",
+                            ImageName = "2.jpg",
                             IsProductOfTheWeek = true,
                             LongDescription = "AMD Ryzen 9 3900X 12-core, 24-thread unlocked desktop processor with Wraith Prism LED Cooler",
                             Name = "AMD Ryzen 9 3900X ",
@@ -117,8 +115,7 @@ namespace ecommerce.Migrations
                         {
                             ProductId = 3,
                             CategoryId = 2,
-                            ImageThumbnailUrl = "https://images-na.ssl-images-amazon.com/images/I/81D46VNLb9L._AC_SL1500_.jpg",
-                            ImageUrl = "https://images-na.ssl-images-amazon.com/images/I/81D46VNLb9L._AC_SL1500_.jpg",
+                            ImageName = "3.jpg",
                             IsProductOfTheWeek = false,
                             LongDescription = "XFX Radeon RX 580 GTS XXX Edition 1386MHz OC+, 8GB GDDR5, VR Ready, Dual BIOS, 3xDP HDMI DVI, AMD Graphics Card (RX-580P8DFD6)",
                             Name = "XFX Radeon RX 580",
@@ -129,13 +126,45 @@ namespace ecommerce.Migrations
                         {
                             ProductId = 4,
                             CategoryId = 3,
-                            ImageThumbnailUrl = "https://images-na.ssl-images-amazon.com/images/I/61qHbO1rbdL._AC_SL1280_.jpg",
-                            ImageUrl = "https://images-na.ssl-images-amazon.com/images/I/61qHbO1rbdL._AC_SL1280_.jpg",
+                            ImageName = "4.jpg",
                             IsProductOfTheWeek = true,
                             LongDescription = "Crucial Ballistix RGB 3200 MHz DDR4 DRAM Desktop Gaming Memory Kit 16GB (8GBx2) CL16 BL2K8G32C16U4BL (Black) ",
                             Name = "Crucial Ballistix RGB 3200 MGz DDR4 8GBx2",
                             Price = 60000m,
                             ShortDescription = "Crucial Ballistix RGB 3200 MHz DDR4 DRAM Desktop Gaming Memory Kit 16GB (8GBx2)"
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            CategoryId = 1,
+                            ImageName = "5.jpg",
+                            IsProductOfTheWeek = false,
+                            LongDescription = "Intel Core i7-9700K Desktop Processor 8 Cores up to 4.9 GHz Turbo unlocked LGA1151 300 Series 95W",
+                            Name = "Intel Core i7-9700K",
+                            Price = 45000m,
+                            ShortDescription = "Intel Core i7-9700K Desktop Processor 8 Cores"
+                        },
+                        new
+                        {
+                            ProductId = 6,
+                            CategoryId = 2,
+                            ImageName = "6.jpg",
+                            IsProductOfTheWeek = true,
+                            LongDescription = "XFX RX 5600 XT THICC III PRO - 14GBPS 6GB GDDR6 BOOST UP TO 1750MHz 3xDP HDMI Graphics Card RX-56XT6TF48 ",
+                            Name = "XFX RX 5600 XT THICC III PRO",
+                            Price = 50000m,
+                            ShortDescription = "XFX RX 5600 XT THICC III PRO - 14GBPS 6GB GDDR6"
+                        },
+                        new
+                        {
+                            ProductId = 7,
+                            CategoryId = 3,
+                            ImageName = "7.jpg",
+                            IsProductOfTheWeek = true,
+                            LongDescription = "G.Skill 32GB DDR4 Trident Z Royal Gold 3200Mhz PC4-25600 CL16 1.35V Dual Channel Kit (2x16GB) ",
+                            Name = "G.Skill 2x16GB DDR4 Trident Z Royal Gold",
+                            Price = 60000m,
+                            ShortDescription = "G.Skill 32GB DDR4 Trident Z Royal Gold 3200Mhz PC4-25600"
                         });
                 });
 

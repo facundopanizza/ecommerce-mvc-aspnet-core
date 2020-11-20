@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using ecommerce.ViewModels;
 
 namespace ecommerce.Models
 {

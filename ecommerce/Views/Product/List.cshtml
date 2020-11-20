@@ -1,4 +1,5 @@
 @model ProductListViewModel
+@using X.PagedList.Mvc.Core.Common
 
 @{
   var order = Convert.ToString((!Convert.ToBoolean(ViewBag.order)));
@@ -8,7 +9,7 @@
   <h1>Products</h1>
   <div class="mt-2">
     <form method="get" asp-controller="Product" asp-action="List">
-      <input type="hidden" name="name" value="@Model.searchName" />
+      <input type="hidden" name="name" value="@ViewBag.searchName" />
       <input type="hidden" name="order" value="@order" />
       <input type="hidden" name="page" value="@Model.Page" />
       <button class="btn btn-warning">Order by Price</button>
@@ -26,5 +27,12 @@
   }
 </div>
 
-@Html.PagedListPager(Model.Products, page => Url.Action("List", "Product", new { page,
-order=ViewBag.order, name=Model.searchName }));
+<div class="row justify-content-center">
+  <div>
+    @Html.PagedListPager(Model.Products, page => Url.Action("List", "Product", new { page,
+    order=ViewBag.order, name=ViewBag.searchName }), new PagedListRenderOptions {
+      LiElementClasses = new string[] { "page-item" },
+      PageClasses = new string[] { "page-link" }
+    })
+  </div>
+</div>

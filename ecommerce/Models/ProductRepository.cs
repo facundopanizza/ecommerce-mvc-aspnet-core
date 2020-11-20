@@ -3,15 +3,22 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using ecommerce.ViewModels;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace ecommerce.Models
 {
   public class ProductRepository : IProductRepository
   {
     private readonly AppDbContext _appDbContext;
-    public ProductRepository(AppDbContext appDbContext)
+    private readonly IWebHostEnvironment _hostEnviroment;
+
+    public ProductRepository(AppDbContext appDbContext, IWebHostEnvironment hostEnvironment)
     {
       _appDbContext = appDbContext;
+      _hostEnviroment = hostEnvironment;
     }
 
     public IEnumerable<Product> ProductsOfTheWeek
@@ -29,15 +36,40 @@ namespace ecommerce.Models
 
     public bool Add(Product product)
     {
+      product.ImageName = UploadedFile(product);
+
       _appDbContext.Products.Add(product);
       _appDbContext.SaveChanges();
 
       return true;
     }
 
+    private string UploadedFile(string image)
+    {
+      throw new NotImplementedException();
+    }
+
     public bool Update(Product product)
     {
-      _appDbContext.Update(product);
+      var productToUpdate = _appDbContext.Products.FirstOrDefault(p => p.ProductId == product.ProductId);
+
+      string imageToDeletePath = Path.Combine(_hostEnviroment.WebRootPath, "images", "products", productToUpdate.ImageName);
+
+      productToUpdate.CategoryId = product.CategoryId;
+      productToUpdate.Image = product.Image;
+      productToUpdate.IsProductOfTheWeek = product.IsProductOfTheWeek;
+      productToUpdate.LongDescription = product.LongDescription;
+      productToUpdate.Name = product.Name;
+      productToUpdate.Price = product.Price;
+      productToUpdate.ShortDescription = product.ShortDescription;
+
+      productToUpdate.ImageName = UploadedFile(product);
+      _appDbContext.Update(productToUpdate);
+
+      if (System.IO.File.Exists(imageToDeletePath))
+      {
+        System.IO.File.Delete(imageToDeletePath);
+      }
 
       _appDbContext.SaveChanges();
 
@@ -51,6 +83,13 @@ namespace ecommerce.Models
       if (product == null)
       {
         return false;
+      }
+
+      string imageToDeletePath = Path.Combine(_hostEnviroment.WebRootPath, "images", "products", product.ImageName);
+
+      if (System.IO.File.Exists(imageToDeletePath))
+      {
+        System.IO.File.Delete(imageToDeletePath);
       }
 
       _appDbContext.Products.Remove(product);
@@ -84,6 +123,23 @@ namespace ecommerce.Models
       }
 
       return products;
+    }
+
+    private string UploadedFile(Product product)
+    {
+      string uniqueFileName = null;
+
+      if (product.Image != null)
+      {
+        string uploadsFolder = Path.Combine(_hostEnviroment.WebRootPath, "images/products");
+        uniqueFileName = Guid.NewGuid().ToString() + "_" + product.Image.FileName;
+        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+        using (var fileStream = new FileStream(filePath, FileMode.Create))
+        {
+          product.Image.CopyTo(fileStream);
+        }
+      }
+      return uniqueFileName;
     }
   }
 }

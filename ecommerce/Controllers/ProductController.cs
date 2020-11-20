@@ -20,14 +20,13 @@ namespace ecommerce.Models
     {
       ProductListViewModel productListViewModel = new ProductListViewModel();
       var products = _productRepository.GetProducts(name, order);
-      // productListViewModel.Products = _productRepository.GetProducts(name, order);
 
       var pageNumber = page ?? 1;
 
       productListViewModel.Products = products.ToPagedList(pageNumber, 6);
       productListViewModel.Page = pageNumber;
-      productListViewModel.searchName = name;
 
+      ViewBag.searchName = name;
       ViewBag.order = order;
 
       return View(productListViewModel);

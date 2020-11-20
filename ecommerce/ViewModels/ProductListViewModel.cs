@@ -9,6 +9,5 @@ namespace ecommerce.ViewModels
     public IPagedList<Product> Products { get; set; }
     public int Page { get; set; }
     public string Order { get; set; }
-    public string searchName { get; set; }
   }
 }

@@ -1,21 +1,30 @@
 @model ProductListViewModel
-<h1>@Model.CurrentCategory</h1>
-<div class="row">
+
+@{
+  var order = Convert.ToString((!Convert.ToBoolean(ViewBag.order)));
+}
+
+<div class="row justify-content-between">
+  <h1>Products</h1>
+  <div class="mt-2">
+    <form method="get" asp-controller="Product" asp-action="List">
+      <input type="hidden" name="name" value="@Model.searchName" />
+      <input type="hidden" name="order" value="@order" />
+      <input type="hidden" name="page" value="@Model.Page" />
+      <button class="btn btn-warning">Order by Price</button>
+    </form>
+  </div>
+  <div class="mt-2">
+    <a asp-action="Create" asp-controller="Product" class="btn btn-primary">Create Product</a>
+  </div>
+</div>
+
+<div class="row mt-4">
   @foreach (var product in Model.Products)
   {
-    <div class="col-sm-4 col-lg-4 col-md-4 mb-4">
-      <div class="thumbnail">
-        <div class="thumb-img">
-          <img src="@product.ImageThumbnailUrl" alt="@product.Name">
-        </div>
-        <div class="caption">
-          <h3 class="text-right">@product.Price.ToString("c")</h3>
-          <h3>
-            <a>@product.Name</a>
-          </h3>
-          <p>@product.ShortDescription</p>
-        </div>
-      </div>
-    </div>
+    <partial name="_ProductCard" model="product" />
   }
 </div>
+
+@Html.PagedListPager(Model.Products, page => Url.Action("List", "Product", new { page,
+order=ViewBag.order, name=Model.searchName }));

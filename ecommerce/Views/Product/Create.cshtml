@@ -1,0 +1,72 @@
+@model Product
+@{
+  <div class="box box-info">
+    <div class="box-header with-border">
+      <h3 class="box-title">Add Product</h3>
+    </div>
+    <form class="form-horizontal" method="post" action="Add">
+      <div class="box-body">
+        <div class="form-group">
+          <label asp-for="Name" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input asp-for="Name" type="text" class="form-control" placeholder="Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label asp-for="ShortDescription" class="col-sm-2 control-label">Short Description</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" asp-for="ShortDescription" placeholder="ShortDescription">
+            <span asp-validation-for="ShortDescription" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label asp-for="LongDescription" class="col-sm-2 control-label">Long Description</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" asp-for="LongDescription" placeholder="LongDescription">
+            <span asp-validation-for="LongDescription" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label asp-for="Price" class="col-sm-2 control-label">Price</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" asp-for="Price" placeholder="Price">
+            <span asp-validation-for="Price" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label asp-for="ImageUrl" class="col-sm-2 control-label">Image Url</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" asp-for="ImageUrl" placeholder="ImageUrl">
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label asp-for="ImageThumbnailUrl" class="col-sm-3 control-label">Image Thumbnail Url</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" asp-for="ImageThumbnailUrl" placeholder="ImageThumbnailUrl">
+            <span asp-validation-for="ImageThumbnailUrl" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label asp-for="CategoryId" class="col-sm-2 control-label" class="control-label">Category</label>
+          <div class="col-sm-10">
+            <select asp-for="CategoryId" class="form-control" asp-items="@(ViewBag.Categories as SelectList)">
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10">
+            <label asp-for="IsProductOfTheWeek" class="control-label">Is a Product of The Week</label>
+            <input type="checkbox" asp-for="IsProductOfTheWeek">
+            <span asp-validation-for="IsProductOfTheWeek" class="text-danger"></span>
+          </div>
+        </div>
+      </div>
+      <div class="box-footer">
+        <button type="submit" class="btn btn-info">Create</button>
+      </div>
+    </form>
+  </div>
+}

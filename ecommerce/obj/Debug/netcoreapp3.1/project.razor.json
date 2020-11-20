@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/facundo/code/pluralsight/asp.core/ecommerce/ecommerce.csproj",
+  "FilePath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14390,6 +14390,27 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "ecommerce",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/Views/Product/List.cshtml",
+      "TargetPath": "Views\\Product\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

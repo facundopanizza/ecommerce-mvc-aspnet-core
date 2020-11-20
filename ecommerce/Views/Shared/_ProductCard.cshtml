@@ -6,7 +6,7 @@
       <img src="/images/products/@Model.ImageName" alt="@Model.Name">
     </div>
     <div class="caption pt-2">
-      <h3 class="float-right">@Model.Price.ToString("c")</h3>
+      <h3 class="float-right">$@Model.Price.ToString()</h3>
       <div class="addToCart">
         <p class="button">
           <a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-productId="@Model.ProductId"

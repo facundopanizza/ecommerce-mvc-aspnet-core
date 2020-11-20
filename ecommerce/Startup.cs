@@ -45,7 +45,6 @@ namespace ecommerce
         app.UseDeveloperExceptionPage();
       }
 
-      app.UseHttpsRedirection();
       app.UseStaticFiles();
       app.UseSession();
 

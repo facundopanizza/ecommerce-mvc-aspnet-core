@@ -27,11 +27,15 @@ namespace ecommerce
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddDbContext<AppDbContext>(options =>
-        options.UseNpgsql(Configuration.GetConnectionString("PostgreSQL"))
+        options.UseSqlServer(Configuration.GetConnectionString("SqlServer"))
       );
+
       services.AddScoped<IProductRepository, ProductRepository>();
       services.AddScoped<ICategoryRepository, CategoryRepository>();
       services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+
+      services.AddRazorPages();
+
       services.AddHttpContextAccessor();
       services.AddSession();
       services.AddControllersWithViews();
@@ -50,11 +54,15 @@ namespace ecommerce
 
       app.UseRouting();
 
+      app.UseAuthentication();
+      app.UseAuthorization();
+
       app.UseEndpoints(endpoints =>
       {
         endpoints.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+        endpoints.MapRazorPages();
       });
     }
   }

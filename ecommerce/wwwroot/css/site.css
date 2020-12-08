@@ -24,8 +24,8 @@ body {
 }
 
 .caption {
-  height: 200px;
-  overflow: hidden;
+  height: 220px;
+  overflow: auto;
   padding: 0px 2px;
 }
 

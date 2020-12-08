@@ -2,45 +2,52 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css">
-  <script src="~/lib/jquery/jquery.js"></script>
-  <script src="~/lib/bootstrap/js/bootstrap.js"></script>
-  <link rel="stylesheet" href="~/css/site.css">
-  <title>@ViewBag.Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css">
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="~/css/site.css">
+    <title>@ViewBag.Title</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a href="/"><img src="~/images/logo.png" alt="Hardware Store" style="max-width: 250px;" class="mr-4"></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="/">
+        <img src="~/images/logo.png" alt="Hardware Store" style="max-width: 250px;" class="mr-4">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" asp-controller="Product" asp-action="List">Products</a>
-        </li>
-        @await Component.InvokeAsync("ShoppingCartSummary")
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Product" asp-action="List">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Category" asp-action="List">Categories</a>
+            </li>
+            <partial name="_LoginPartial"></partial>
+            @await Component.InvokeAsync("ShoppingCartSummary")
+        </ul>
     </div>
     <form method="get" asp-action="List" asp-controller="Product" class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" name="name" value="@ViewBag.searchName">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <input class="form-control mr-sm-2" type="search" name="name" value="@ViewBag.searchName">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-  </nav>
-  <div class="container">
+</nav>
+<div class="container">
     <div class="row">
-      <div class="col-md-12">
-        @RenderBody()
-      </div>
+        <div class="col-md-12">
+            @RenderBody()
+        </div>
     </div>
-  </div>
+</div>
+@RenderSection("Scripts", required: false)
 </body>
-
 </html>

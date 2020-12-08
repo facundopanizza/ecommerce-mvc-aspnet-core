@@ -1,21 +1,36 @@
 @model Product;
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewBag.Title = "Product  - " + @Model.Name;
+}
 
 <h2>@Model.Name</h2>
 
 <div class="thumbnail">
-  <img src="/images/products/@Model.ImageName" style="max-height: none;" alt="@Model.Name">
-  <div class="caption-full">
-    <h3 class="float-right">$@Model.Price.ToString()</h3>
-    <h3>
-      <a href="#">@Model.Name</a>
-    </h3>
-    <h4>@Model.ShortDescription</h4>
-    <p>@Model.LongDescription</p>
-    <div class="row ml-2">
-      <a asp-controller="Product" asp-action="Edit" asp-route-id="@Model.ProductId"
-        class="btn btn-primary mr-1">Edit</a>
-      <a asp-controller="Product" asp-action="Delete" asp-route-id="@Model.ProductId" class="btn text-white"
-        style="background-color: red;">Delete</a>
+    <img src="/images/products/@Model.ImageName" style="max-height: none;" alt="@Model.Name">
+    <div class="caption-full">
+        <h3 class="float-right">$@Model.Price.ToString()</h3>
+        <h3>
+            <a href="#">@Model.Name</a>
+        </h3>
+        <h4>@Model.ShortDescription</h4>
+        <p>@Model.LongDescription</p>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <div class="row ml-2">
+                <a asp-controller="Product" asp-action="Edit" asp-route-id="@Model.ProductId"
+                   class="btn btn-primary mr-1">
+                    Edit
+                </a>
+                <a asp-controller="Product" asp-action="Delete" asp-route-id="@Model.ProductId" class="btn text-white"
+                   style="background-color: red;">
+                    Delete
+                </a>
+            </div>
+        }
     </div>
-  </div>
 </div>

@@ -1,38 +1,50 @@
 @model ProductListViewModel
 @using X.PagedList.Mvc.Core.Common
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 @{
-  var order = Convert.ToString((!Convert.ToBoolean(ViewBag.order)));
+    ViewBag.Title = "Products";
+    var order = Convert.ToString((!Convert.ToBoolean(ViewBag.order)));
 }
 
 <div class="row justify-content-between">
-  <h1>Products</h1>
-  <div class="mt-2">
-    <form method="get" asp-controller="Product" asp-action="List">
-      <input type="hidden" name="name" value="@ViewBag.searchName" />
-      <input type="hidden" name="order" value="@order" />
-      <input type="hidden" name="page" value="@Model.Page" />
-      <button class="btn btn-warning">Order by Price</button>
-    </form>
-  </div>
-  <div class="mt-2">
-    <a asp-action="Create" asp-controller="Product" class="btn btn-primary">Create Product</a>
-  </div>
+    <h1>Products</h1>
+    <div class="mt-2">
+        <form method="get" asp-controller="Product" asp-action="List">
+            <input type="hidden" name="name" value="@ViewBag.searchName"/>
+            <input type="hidden" name="order" value="@order"/>
+            <input type="hidden" name="page" value="@Model.Page"/>
+            <button class="btn btn-warning">Order by Price</button>
+        </form>
+    </div>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <div class="mt-2">
+            <a asp-action="Create" asp-controller="Product" class="btn btn-primary">Create Product</a>
+        </div>
+    }
 </div>
 
 <div class="row mt-4">
-  @foreach (var product in Model.Products)
-  {
-    <partial name="_ProductCard" model="product" />
-  }
+    @foreach (var product in Model.Products)
+    {
+        <partial name="_ProductCard" model="product"/>
+    }
 </div>
 
 <div class="row justify-content-center">
-  <div>
-    @Html.PagedListPager(Model.Products, page => Url.Action("List", "Product", new { page,
-    order=ViewBag.order, name=ViewBag.searchName }), new PagedListRenderOptions {
-      LiElementClasses = new string[] { "page-item" },
-      PageClasses = new string[] { "page-link" }
-    })
-  </div>
+    <div>
+        @Html.PagedListPager(Model.Products, page => Url.Action("List", "Product", new
+        {
+            page,
+            order = ViewBag.order, name = ViewBag.searchName
+        }), new PagedListRenderOptions
+        {
+            LiElementClasses = new string[] {"page-item"},
+            PageClasses = new string[] {"page-link"}
+        })
+    </div>
 </div>

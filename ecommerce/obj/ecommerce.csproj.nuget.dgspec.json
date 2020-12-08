@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj": {}
+    "/home/facundo/code/C#/ecommerce-mvc-aspnet-core/ecommerce/ecommerce.csproj": {}
   },
   "projects": {
-    "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj": {
+    "/home/facundo/code/C#/ecommerce-mvc-aspnet-core/ecommerce/ecommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj",
+        "projectUniqueName": "/home/facundo/code/C#/ecommerce-mvc-aspnet-core/ecommerce/ecommerce.csproj",
         "projectName": "ecommerce",
-        "projectPath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/ecommerce.csproj",
+        "projectPath": "/home/facundo/code/C#/ecommerce-mvc-aspnet-core/ecommerce/ecommerce.csproj",
         "packagesPath": "/home/facundo/.nuget/packages/",
-        "outputPath": "/home/facundo/code/pluralsight/asp.core/Ecommerce/ecommerce/obj/",
+        "outputPath": "/home/facundo/code/C#/ecommerce-mvc-aspnet-core/ecommerce/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/facundo/.nuget/NuGet/NuGet.Config"
@@ -36,6 +36,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -45,6 +53,20 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

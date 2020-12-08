@@ -1,10 +1,12 @@
 using ecommerce.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using X.PagedList;
 
 namespace ecommerce.Models
 {
+  [Authorize]
   public class ProductController : Controller
   {
     private readonly IProductRepository _productRepository;
@@ -16,6 +18,7 @@ namespace ecommerce.Models
       _categoryRepository = categoryRepository;
     }
 
+    [AllowAnonymous]
     public ViewResult List(string name, bool order, int? page)
     {
       ProductListViewModel productListViewModel = new ProductListViewModel();
@@ -32,6 +35,7 @@ namespace ecommerce.Models
       return View(productListViewModel);
     }
 
+    [AllowAnonymous]
     public IActionResult Details(int id)
     {
       var product = _productRepository.GetProductById(id);
@@ -80,7 +84,7 @@ namespace ecommerce.Models
     {
       if (ModelState.IsValid)
       {
-        var productDb = _productRepository.Update(product);
+        _productRepository.Update(product);
 
         return RedirectToAction("List", "Product");
       }

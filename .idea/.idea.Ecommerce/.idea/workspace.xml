@@ -23,71 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0f20c0-fa0c-4f7a-b269-4ab83e096f20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/Controllers/CategoryController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/ViewModels/CategoryListViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/Views/Category/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/Views/Category/Edit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/Views/Category/List.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Controllers/ProductController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/CategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/CategoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/ICategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/ICategoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/IProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/IProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/ShoppingCart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/ShoppingCart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Models/ShoppingCartItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Models/ShoppingCartItems.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Views/Product/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Views/Product/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ecommerce/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ecommerce/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ecommerce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ecommerce/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/Views/Category/List.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Views/Category/List.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/Views/Product/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Views/Product/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Views/Product/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Views/Product/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Views/Product/List.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Views/Product/List.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/Views/Shared/_ProductCard.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Views/Shared/_ProductCard.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/Views/ShoppingCart/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/Views/ShoppingCart/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/bin/Debug/netcoreapp3.1/ecommerce.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/ecommerce.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/ecommerce.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Product/Create.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Product/Create.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Category/List.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Category/List.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Product/Details.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Product/Details.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Product/Edit.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Product/Edit.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Product/List.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Product/List.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/ShoppingCartSummary/Default.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/ShoppingCartSummary/Default.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Carousel.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Carousel.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ProductCard.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ProductCard.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/ShoppingCart/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/ShoppingCart/Index.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/ecommerce.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/staticwebassets/ecommerce.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/staticwebassets/ecommerce.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/staticwebassets/ecommerce.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/Debug/netcoreapp3.1/staticwebassets/ecommerce.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/ecommerce.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +74,15 @@
         <option value="$PROJECT_DIR$/ecommerce/Views/Product/List.cshtml" />
         <option value="$PROJECT_DIR$/ecommerce/Areas/Identity/Pages/Account/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/ecommerce/wwwroot/css/site.css" />
-        <option value="$PROJECT_DIR$/ecommerce/Views/Shared/_ProductCard.cshtml" />
-        <option value="$PROJECT_DIR$/ecommerce/Views/Product/Details.cshtml" />
-        <option value="$PROJECT_DIR$/ecommerce/Views/Category/List.cshtml" />
         <option value="$PROJECT_DIR$/ecommerce/Views/Shared/_LoginPartial.cshtml" />
         <option value="$PROJECT_DIR$/ecommerce/Areas/Identity/IdentityHostingStartup.cs" />
         <option value="$PROJECT_DIR$/ecommerce/Controllers/CategoryController.cs" />
-        <option value="$PROJECT_DIR$/ecommerce/Controllers/ProductController.cs" />
         <option value="$PROJECT_DIR$/ecommerce/Startup.cs" />
         <option value="$PROJECT_DIR$/ecommerce/appsettings.json" />
+        <option value="$PROJECT_DIR$/ecommerce/Views/Shared/_ProductCard.cshtml" />
+        <option value="$PROJECT_DIR$/ecommerce/Views/Category/List.cshtml" />
+        <option value="$PROJECT_DIR$/ecommerce/Views/Product/Details.cshtml" />
+        <option value="$PROJECT_DIR$/ecommerce/Controllers/ProductController.cs" />
       </list>
     </option>
   </component>
@@ -191,7 +140,7 @@
       <workItem from="1607443654950" duration="7154000" />
       <workItem from="1607451129614" duration="1164000" />
       <workItem from="1607452317112" duration="579000" />
-      <workItem from="1607452909215" duration="1992000" />
+      <workItem from="1607452909215" duration="3403000" />
     </task>
     <servers />
   </component>
@@ -228,14 +177,14 @@
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="1322" y="641" width="1196" height="912" key="SettingsEditor/0.27.3840.2133/3840.1080.1920.1080@0.27.3840.2133" timestamp="1607443786441" />
-    <state width="623" height="564" key="SwitcherDM" timestamp="1607453991910">
+    <state width="623" height="564" key="SwitcherDM" timestamp="1607456507332">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="623" height="564" key="SwitcherDM/0.27.3840.2133/3840.1080.1920.1080@0.27.3840.2133" timestamp="1607453991910" />
-    <state x="1395" y="686" width="1039" height="822" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607454813167">
+    <state width="623" height="564" key="SwitcherDM/0.27.3840.2133/3840.1080.1920.1080@0.27.3840.2133" timestamp="1607456507332" />
+    <state x="1395" y="686" width="1039" height="822" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607456296769">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="1395" y="686" width="1039" height="822" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.3840.2133/3840.1080.1920.1080@0.27.3840.2133" timestamp="1607454813167" />
+    <state x="1395" y="686" width="1039" height="822" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.3840.2133/3840.1080.1920.1080@0.27.3840.2133" timestamp="1607456296769" />
     <state x="1481" y="742" width="875" height="663" key="recent.locations.popup" timestamp="1607448242718">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
@@ -244,9 +193,9 @@
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="1500" y="518" key="run.anything.popup/0.27.3840.2133/3840.1080.1920.1080@0.27.3840.2133" timestamp="1607445399909" />
-    <state x="1499" y="522" width="928" height="1034" key="search.everywhere.popup" timestamp="1607454622410">
+    <state x="1499" y="522" width="928" height="1034" key="search.everywhere.popup" timestamp="1607456485658">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="1499" y="522" width="928" height="1034" key="search.everywhere.popup/0.27.3840.2133/3840.1080.1920.1080@0.27.3840.2133" timestamp="1607454622410" />
+    <state x="1499" y="522" width="928" height="1034" key="search.everywhere.popup/0.27.3840.2133/3840.1080.1920.1080@0.27.3840.2133" timestamp="1607456485658" />
   </component>
 </project>

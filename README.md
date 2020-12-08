@@ -1,4 +1,5 @@
-First run migrations
+First edit the ecommerce/appsettings.json file to and your connection string.
+After that run migrations
 dotnet ef database update --context AppDbContext
 
 This will create all the tables and seed the database with some data.

@@ -41,8 +41,8 @@
         </e>
         <e p="Dockerfile" t="Include" />
         <e p="Migrations" t="Include">
-          <e p="20201120162534_initial.Designer.cs" t="Include" />
-          <e p="20201120162534_initial.cs" t="Include" />
+          <e p="20201208191637_Initial.Designer.cs" t="Include" />
+          <e p="20201208191637_Initial.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
           <e p="IdentityDb" t="Include">
             <e p="20201208182641_AddIdentity.Designer.cs" t="Include" />
@@ -131,6 +131,7 @@
             <e p="carousel4.jpg" t="Include" />
             <e p="logo.png" t="Include" />
             <e p="products" t="Include">
+              <e p="017ae52c-2bb4-45f7-bccf-d35da85321fe_Original-Facebook-Geek-Profile-Avatar-6.jpg" t="Include" />
               <e p="1.jpg" t="Include" />
               <e p="2.jpg" t="Include" />
               <e p="3.jpg" t="Include" />

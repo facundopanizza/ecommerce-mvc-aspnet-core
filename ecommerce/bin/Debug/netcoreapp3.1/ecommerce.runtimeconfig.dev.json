@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/facundo/.dotnet/store/|arch|/|tfm|",
-      "/home/facundo/.nuget/packages"
+      "C:\\Users\\facue\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\facue\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }
